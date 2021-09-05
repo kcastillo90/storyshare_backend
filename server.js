@@ -26,7 +26,7 @@ app.use(
 
 //---------- Controllers ----------//
 const storyController = require('./controllers/storyShare.js')
-app.use('/stories', storyController)
+app.use('/', storyController)
 
 //---------- Database ----------//
 const MONGODB_URI = process.env.MONGODB_URI
