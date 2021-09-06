@@ -2,9 +2,10 @@ const mongoose = require('mongoose')
 
 const storySchema = new mongoose.Schema({
   title: String,
-  author: String,         // username should ultimately be inserted on front-end
+  author: String,
   synopsis: String,
   story: String,
+  user: String
 })
 
 const Stories = mongoose.model('Story', storySchema)
