@@ -29,7 +29,8 @@ const storyController = require('./controllers/storyShare.js')
 app.use('/', storyController)
 
 //---------- Database ----------//
-const MONGODB_URI = process.env.MONGODB_URI
+// const MONGODB_URI = process.env.MONGODB_URI
+const MONGODB_URI = 'mongodb://localhost:27017/storyshare'
 mongoose.connect(MONGODB_URI)    // removed options due to mongoose6.0
 
 //---------- Error/Success ---------//
