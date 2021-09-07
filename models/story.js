@@ -5,7 +5,7 @@ const storySchema = new mongoose.Schema({
   author: String,
   synopsis: String,
   story: String,
-  user: String
+  account: String
 })
 
 const Stories = mongoose.model('Story', storySchema)
